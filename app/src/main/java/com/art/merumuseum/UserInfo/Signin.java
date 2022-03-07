@@ -194,7 +194,7 @@ public class Signin extends AppCompatActivity {
                 }
                 else {
                     Toast.makeText(Signin.this, "Unsuccesful login!", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(Signin.this, "Check internet or password or email!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Signin.this, "Check internet or password or email or username!", Toast.LENGTH_SHORT).show();
 
                 }
                 progressDialog.dismiss();
