@@ -131,7 +131,7 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
         toolbar.setTitle("Help");
         break;
       case R.id.feedback:
-        fag=new Help();
+        fag=new Feedback();
         loadFragment(fag);
         toolbar.setTitle("Feedback");
         break;
