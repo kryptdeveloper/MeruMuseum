@@ -152,14 +152,22 @@ public class BuyATicket extends Fragment implements CheckBox.OnCheckedChangeList
                         }
 
                     }
+                    if(total==0){
 
-                    Intent intent=new Intent(getContext(),Payment.class);
-                    intent.putExtra("prize",String.valueOf(total));
+                        Toast.makeText(getContext(), "enter no of adults or children", Toast.LENGTH_SHORT).show();
+                    }else
+                    {
+                        Intent intent=new Intent(getContext(),Payment.class);
+                        intent.putExtra("prize",String.valueOf(total));
 
-                    startActivity(intent);
+                        startActivity(intent);
 
 
-                    getActivity().finish();
+                        getActivity().finish();
+
+                    }
+
+
 
 
 
