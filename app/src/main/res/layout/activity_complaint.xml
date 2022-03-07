@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.art.merumuseum.modules.Complaint">
+
+    <TextView
+        android:id="@+id/titlecomp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Send feed back"
+        android:textSize="32dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/desCompl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlecomp"
+        android:layout_marginTop="21dp"
+        android:paddingStart="15sp"
+        android:text="@string/pleafeed"
+        android:textSize="21dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/complaitdet"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/desCompl"
+        android:layout_margin="7dp"
+        android:gravity="center"
+        android:hint="enter your feedback" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/imagescomplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/complaitdet"
+        android:layout_margin="7dp"
+        android:gravity="center"
+        android:hint="image" />
+
+    <Button
+        android:id="@+id/submitcomplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagescomplaint"
+        android:layout_margin="21dp"
+        android:text="Submit" />
+
+</RelativeLayout>

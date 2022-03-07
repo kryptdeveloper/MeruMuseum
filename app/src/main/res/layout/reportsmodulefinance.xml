@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reportsLin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/allTranactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"
+        android:background="@drawable/btn_bg"
+        android:text="All Transactions" />
+
+    <Button
+        android:id="@+id/allapproved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"
+        android:background="@drawable/btn_bg"
+        android:text="All approved" />
+
+    <Button
+        android:id="@+id/allrejected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"
+        android:background="@drawable/btn_bg"
+        android:text="All rejected" />
+
+    <Button
+        android:id="@+id/allpending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="21dp"
+        android:background="@drawable/btn_bg"
+        android:text="All pending" />
+
+</LinearLayout>

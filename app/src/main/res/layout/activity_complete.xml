@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.art.merumuseum.GuideModules.guide.CompleteActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ggtransctid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Transact-id:cgh ckfkbgcgyu"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ggfcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Mpesa code:cgh ckfkbgcgyu"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ggfaemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center_vertical"
+            android:text="Email:cgh ckfkbg kcgyu"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/ggfaamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center_vertical"
+            android:text="Amount:6787kes"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/ggfaadate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="center_vertical"
+            android:text="Date:77/55/6798"
+            android:textSize="28dp" />
+
+        <Button
+            android:id="@+id/didcomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="21dp"
+            android:background="@color/colorPrimary"
+            android:text="Completed" />
+
+        <Button
+            android:id="@+id/dnCome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="21dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Did not Come" />
+
+    </LinearLayout>
+
+</RelativeLayout>

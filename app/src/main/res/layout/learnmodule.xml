@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_above="@+id/lin"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="The creation and further the establishment of Meru museum as one of the regional museums of the National Museums of Kenya was catapulted by a need to conserve the culture and traditional practices of the locals, the Meru speaking people. Meru museum originated in 1974 in an old historic building that was vacated by the District Commissioner, whose office it had been since the colonial days. The building housing the Meru museum dates back to 1916. In the colonial era it served as an administrative node in the Mount Kenya region. The museum was a joint effort by the Meru Municipal and County Councils, together with the National Museums of Kenya in creating an attractive and formative center useful to the local people and to visitors. Aspects of the cultural and diverse history of the Meru people are well illustrated by the numerous displays. Two rather unusual amenities of the Meru museum are a garden of indigenous medicinal shrubs and herbs together with a theatre. A compound of traditional huts has been constructed on the grounds, which are included in tours of the museum. An outdoor platform for dancing and musical programs along with sales kiosks complete the exterior construction. The exhibitions serve largely in stimulating particularly among the young generation awareness of and appreciation for their cultural heritage and that of other communities as well as serving as an introduction to the region for visitors."
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geographical information"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grid Reference \n500E 054N \nSheet No. 108/3 \nMap Scale: 1:50,000 \nEast Africa (Kenya) \nDistance from Nairobi: 106 statute miles by Air \nDirection from Nairobi: East North East \nFor more information contact \nThe Curator \nMeru Museum \nP.O.Box 597- 60200, Meru. \nTel: 064- 32482"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/eventbtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/event" />
+
+        <ImageButton
+            android:id="@+id/time_onbtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="34dp"
+            android:background="@drawable/clock" />
+
+        <ImageButton
+            android:id="@+id/mapbtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="34dp"
+            android:background="@drawable/map" />
+
+    </LinearLayout>
+
+</RelativeLayout>

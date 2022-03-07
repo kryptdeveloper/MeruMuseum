@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/recEvent"
+        android:title="All Artefacts" />
+
+    <item
+        android:id="@+id/rejarts"
+        android:icon="@drawable/reject"
+        android:title="Rejected arts" />
+
+    <item
+        android:id="@+id/aprovedArts"
+        android:icon="@drawable/approved"
+        android:title="Approved arts" />
+
+    <item
+        android:id="@+id/PendingArts"
+        android:icon="@drawable/pending"
+        android:title="Pending arts" />
+
+    <item
+        android:id="@+id/vr"
+        android:icon="@drawable/pending"
+        android:title="Upload Vr" />
+
+    <item
+        android:id="@+id/getFeedbck"
+        android:icon="@drawable/feedback"
+        android:title="Feedback" />
+
+</menu>

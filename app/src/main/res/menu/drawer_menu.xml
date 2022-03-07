@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Homeid"
+        android:icon="@android:drawable/ic_menu_week"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/buyaticket"
+        android:icon="@drawable/buyaticketicon"
+        android:title="Buy a ticket" />
+
+    <item
+        android:id="@+id/myActivities"
+        android:icon="@drawable/myactivities"
+        android:title="My Activities" />
+
+    <item
+        android:id="@+id/learnmodule"
+        android:icon="@drawable/learniconmap"
+        android:title="Learn" />
+
+    <item
+        android:id="@+id/virtualtour"
+        android:icon="@drawable/vitualicon"
+        android:title="Virtual tour" />
+
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/feedback"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/help"
+        android:title="Help" />
+
+</menu>

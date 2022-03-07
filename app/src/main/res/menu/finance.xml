@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardf"
+        android:icon="@drawable/dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/fidtrans"
+        android:icon="@drawable/all"
+        android:title="All transactions" />
+
+    <item
+        android:id="@+id/fapprovedf"
+        android:icon="@drawable/approved"
+        android:title="Approved transactions" />
+
+    <item
+        android:id="@+id/frejected"
+        android:icon="@drawable/reject"
+        android:title="Rejected transactions" />
+
+    <item
+        android:id="@+id/fpending"
+        android:icon="@drawable/pending"
+        android:title="Pending transactions" />
+
+    <item
+        android:id="@+id/reportsModulef"
+        android:icon="@drawable/report"
+        android:title="Generate Reports" />
+
+</menu>

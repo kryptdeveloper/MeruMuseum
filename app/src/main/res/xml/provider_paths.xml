@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <paths xmlns:aapt="http://schemas.android.com/aapt" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <external-path path="." name="external"/>
+
+    <external-files-path path="." name="external_files"/>
+
+    <cache-path path="." name="cache"/>
+
+    <external-cache-path path="." name="external_cache"/>
+
+    <files-path path="." name="files"/>
+
+</paths>

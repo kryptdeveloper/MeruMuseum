@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="45dp">
+
+    <TextView
+        android:id="@+id/plea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="23sp"
+        android:text="@string/visit"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/feedbackDet"
+        android:layout_width="233dp"
+        android:layout_height="233dp"
+        android:layout_below="@id/plea"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/submitbtnfed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedbackDet"
+        android:layout_margin="21dp"
+        android:text="Submit" />
+
+</RelativeLayout>

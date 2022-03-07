@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/buyaticketcard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="21dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/buyaticketicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy a ticket!" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myActivitiesCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="21dp"
+        android:layout_toRightOf="@id/buyaticketcard"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/myactivities" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Activities"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/learncard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/buyaticketcard"
+        android:layout_margin="21dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/learnandexplore" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="learn"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/vrcardview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/buyaticketcard"
+        android:layout_margin="21dp"
+        android:layout_toRightOf="@id/learncard"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/virtual" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virtual tour"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/feedbackcard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/learncard"
+        android:layout_margin="21dp"
+        android:layout_toRightOf="@id/learncard"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/feedback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="feedback"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/helpcard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/vrcardview"
+        android:layout_margin="21dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

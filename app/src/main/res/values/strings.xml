@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <string name="app_name">MeruMuseum</string>
+
+    <string name="open">open</string>
+
+    <string name="prefStatus">lll</string>
+
+    <string name="close">close</string>
+
+    <string name="visit"> How did your visit go?\n\n We hope you are having or had a wonderfull and memorable day?\n\n To help us improve the Meru Museum experience Please let us know how it went.\n\n </string>
+
+    <string name="pleafeed"> If you are experiencing or noticed\n something that is not up standards,we would like to\n hear about it so we can look into addressing the issue\n got to feedback and submit your feedback\n </string>
+
+    <string name="pleafeed2"> We are sorry to hear that your experience hasnt lived to your expectations. </string>
+
+
+    <string-array name="Vr">
+
+        <item>Vr</item>
+
+    </string-array>
+
+
+    <string-array name="Vr1">
+
+        <item>Vr</item>
+
+    </string-array>
+
+
+    <string-array name="typelist">
+
+        <item>Vr</item>
+
+    </string-array>
+
+
+    <string-array name="typelist1">
+
+        <item>Vr</item>
+
+    </string-array>
+
+
+    <string-array name="locations">
+
+        <item>snakes park</item>
+
+        <item>Ameru huts</item>
+
+        <item>primates park</item>
+
+        <item>tortoise</item>
+
+        <item>crocodile</item>
+
+    </string-array>
+
+    <string name="ipw">192.168.72.187</string>
+
+    <string name="data"> +--------+--------------+------------+--------+---------+ | emp_id | emp_name | hire_date | salary | dept_id | +--------+--------------+------------+--------+---------+ | 1 | Ethan Hunt | 2001-05-01 | 5000 | 4 | | 2 | Tony Montana | 2002-07-15 | 6500 | 1 | | 3 | Sarah Connor | 2005-10-18 | 8000 | 5 | | 4 | Rick Deckard | 2007-01-03 | 7200 | 3 | | 5 | Martin Blank | 2008-06-24 | 5600 | NULL | +--------+--------------+------------+--------+---------+ </string>
+
+</resources>

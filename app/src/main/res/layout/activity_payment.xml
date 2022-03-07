@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.art.merumuseum.modules.Payment">
+
+    <TextView
+        android:id="@+id/Amountid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PRICE:Kshs:16000"
+        android:textSize="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Choose date of arrival below"
+        android:textSize="21dp" />
+
+    <EditText
+        android:id="@+id/datepicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"
+        android:textSize="21dp" />
+
+    <EditText
+        android:id="@+id/codeMpesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:capitalize="characters"
+        android:hint="Enter Mpesa Code"
+        android:maxLength="10"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/pay_btn"
+        style="@style/AppTheme.btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="21dp"
+        android:text="Pay" />
+
+</LinearLayout>

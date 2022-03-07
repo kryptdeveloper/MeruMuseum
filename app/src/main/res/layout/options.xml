@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titlecomp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:text="We will appreciate your honest feedback"
+            android:textSize="32dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/detplea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlecomp1"
+            android:gravity="center"
+            android:text="@string/pleafeed2"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/feedbackform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detplea"
+            android:layout_margin="21dp"
+            android:text="feedback form" />
+
+        <Button
+            android:id="@+id/callteam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedbackform"
+            android:layout_margin="21dp"
+            android:text="Call museum" />
+
+        <Button
+            android:id="@+id/gotohome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/callteam"
+            android:layout_margin="21dp"
+            android:text="HOME" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/idUploadc"
+        android:title="Upload Artefact" />
+
+    <item
+        android:id="@+id/approvedc"
+        android:icon="@drawable/approved"
+        android:title="Approve Artefacts" />
+
+    <item
+        android:id="@+id/Rejectedc"
+        android:icon="@drawable/cancel"
+        android:title="Rejected Artefacts" />
+
+    <item
+        android:id="@+id/pendingc"
+        android:icon="@drawable/pending"
+        android:title="Pending artefacts" />
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Upload Data Here"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/uploadedImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/chooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image" />
+
+    <EditText
+        android:id="@+id/imageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Name" />
+
+    <EditText
+        android:id="@+id/desci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter description" />
+
+    <EditText
+        android:id="@+id/pric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter price" />
+
+    <Spinner
+        android:id="@+id/animalType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:entries="@array/Vr"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/uploadbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Upload"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <!-- Base application theme. -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <!-- Customize your theme here. -->
+
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="AppTheme.cor" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+
+
+        <item name="background">@android:color/white</item>
+
+        <item name="android:textColor">@android:color/black</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="menustyle" parent="Theme.AppCompat.Light">
+
+        <item name="android:background">@android:color/white</item>
+
+    </style>
+
+
+    <style name="AppTheme.btns" parent="Theme.AppCompat.Light">
+
+        <item name="android:background">@drawable/btn_bg</item>
+
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+
+
+    <style name="AppTheme.edittext" parent="Theme.AppCompat.Light">
+
+        <item name="android:background">@drawable/edittext</item>
+
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+
+    <style name="ThemeOverlay_MaterialComponents_TimePicker.mine" parent="Theme.AppCompat.Light">
+
+        <item name="android:background">@drawable/btn_bg</item>
+
+    </style>
+
+</resources>

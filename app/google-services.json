@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "1036992338209",
+    "project_id": "kryptdevelopers-75f55",
+    "storage_bucket": "kryptdevelopers-75f55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036992338209:android:efba9e3ad496c9e5424660",
+        "android_client_info": {
+          "package_name": "com.art.merumuseum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036992338209-4m20ld7430rn91i1fr06m5qvhh1rj1e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDWRAfKQtjCUTNIEnIxR33CVKL5UXD1ME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036992338209-4m20ld7430rn91i1fr06m5qvhh1rj1e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036992338209:android:2e3f7006261b41ed424660",
+        "android_client_info": {
+          "package_name": "com.art.merumuseum1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036992338209-oj36sfkuob78rdeo1moqib92fosk1bc0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.art.merumuseum1",
+            "certificate_hash": "45b9d2e15ba9d0259a667ad19eed413507b5eaaf"
+          }
+        },
+        {
+          "client_id": "1036992338209-4m20ld7430rn91i1fr06m5qvhh1rj1e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDWRAfKQtjCUTNIEnIxR33CVKL5UXD1ME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036992338209-4m20ld7430rn91i1fr06m5qvhh1rj1e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

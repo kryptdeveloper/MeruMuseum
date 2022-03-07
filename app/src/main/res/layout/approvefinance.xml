@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="21dp"
+    app:cardCornerRadius="15dp"
+    android:background="@android:color/white"
+    app:cardElevation="15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MpesaCode:tcwvtuv44"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/mpesaApprov"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:jj@gmail.com"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/emailapprov"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount:300 kes"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/amountapprov"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MpesaCode:tcwvtuv44"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/dateApprov"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:Approved"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/statusapprov"
+            />
+        <Button
+            android:background="@drawable/btn_bg"
+            android:layout_margin="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Approve"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnApprove"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_app_start.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_approve.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_approve_model.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_complaint.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_complete.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_contrubuter.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_curators.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_events.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_finance.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_guide.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_main2.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_main3.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_main4.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_map.xml" value="0.13385416666666666" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_payment.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_receipt2.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_report.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_search.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_signup.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_to_beprinted.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/activity_visitor.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/allpayments.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/alltransactions.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/appbar.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/approveartefacts.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/approved.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/approvedartefacts.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/approvedfinance.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/approvefinance.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/approvemodulef.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/areasguide.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/artholder.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/bar_layout.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/buyatickect.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/contributelayout.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/contributerartfacts.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/createevets.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/customevent.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/dashboardfinace.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/eventscurator.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/feedbackcura.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/feedbackmodule.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/guidemodellayout.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/helpmodule.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/homelayout.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/itemsearch.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/learnmodule.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/myactivities.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/options.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/pendingartefacts.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/pendingfinance.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/profileheader.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/rejectedartfacts.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/rejectedfinace.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/reportsmodulefinance.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/seefeedback.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/sendguide.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/settings.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/showfeedbackcurator.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/ticketlayout.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/user_activity_register.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/useractivities.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/userinfo_activity_main4.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/virtualmodule.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/visitorsguide.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_activity_main.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_activity_main2.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_activity_updateacco.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_activity_view_data2.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_historystatus.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_update_activity_main.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_update_activity_upload_data.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_update_activity_view_data.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vr_update_data_item.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/layout/vrpayment.xml" value="0.259375" />
+        <entry key="..\:/MeruMuseum/app/src/main/res/xml/provider_paths.xml" value="0.259375" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/drawable/dashboard.xml" value="0.21666666666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_main3.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_receipt2.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_to_beprinted.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/approveartefacts.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/artholder.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/bar_layout.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/dashboardfinace.xml" value="0.2203125" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/feedbackmodule.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/homelayout.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/myactivities.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/receipt.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/ticketlayout.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/user_activity_register.xml" value="0.2203125" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/useractivities.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/userinfo_activity_main4.xml" value="0.22447916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

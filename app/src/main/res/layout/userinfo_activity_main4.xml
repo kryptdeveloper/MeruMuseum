@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.art.merumuseum.UserInfo.Signin"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Login"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            />
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter email or username"
+    android:textColorHint="@android:color/tertiary_text_light"
+    >
+
+
+        <EditText
+            android:theme="@style/AppTheme.edittext"
+            android:textColor="@android:color/tab_indicator_text"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+
+
+            android:inputType="textEmailAddress"/>
+</com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:hint="Password"
+
+            android:textColorHint="@android:color/tertiary_text_light"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimaryDark"
+
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:theme="@style/AppTheme.edittext"
+               android:textColor="@android:color/tab_indicator_text"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+
+
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+
+                android:inputType="textPassword"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="choose user type below"
+            android:textSize="21sp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <Spinner
+
+           android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+
+            android:id="@+id/choiceOf"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep Me Logged In"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/checkbox"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:theme="@style/AppTheme.btns"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:id="@+id/login1"
+            android:background="@color/colorPrimaryDark"/>
+
+        <Button
+            android:theme="@style/AppTheme.btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:id="@+id/register"
+            android:background="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
