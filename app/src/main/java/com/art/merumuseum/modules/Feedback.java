@@ -10,7 +10,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,7 +26,9 @@ import com.art.merumuseum1.R;
 
 
 public class Feedback extends Fragment{
-    Button call;
+    Button submitfed;
+    Spinner choose;
+    EditText feed;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -31,54 +38,58 @@ public class Feedback extends Fragment{
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        call=view.findViewById(R.id.btnCall);
-        call.setOnClickListener(new View.OnClickListener() {
+        submitfed=view.findViewById(R.id.submitFedbtn);
+        choose=view.findViewById(R.id.cuser);
+        feed=view.findViewById(R.id.fedContent);
+
+
+        String [] userers={"Curator","Finance","Guide","Admin"};
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(getContext(),android.R.layout.simple_spinner_dropdown_item,userers);
+        choose.setAdapter(adapter);
+        choose.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                switch (i){
+                    case 0:
+                        Toast.makeText(getContext(), "Curator", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        Toast.makeText(getContext(), "Finance", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(getContext(), "Guide", Toast.LENGTH_SHORT).show();
+
+                        break;
+                    case 3:
+                        Toast.makeText(getContext(), "admin", Toast.LENGTH_SHORT).show();
+
+                        break;
+
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+
+
+        submitfed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                callPhoneNumber();
+              sendFeedback();
 
             }
         });
 
     }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults)
-    {
-        if(requestCode == 101)
-        {
-            if(grantResults[0] == PackageManager.PERMISSION_GRANTED)
-            {
-                callPhoneNumber();
-            }
-        }
+
+    private void sendFeedback() {
     }
 
-    public void callPhoneNumber()
-    {
-        try
-        {
-            if(Build.VERSION.SDK_INT > 22)
-            {
-                if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.CALL_PHONE}, 101);
-                    return;
-                }
 
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:" +"0790966647"));
-                startActivity(callIntent);
-
-            }
-            else {
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:" + "0790966647"));
-                startActivity(callIntent);
-            }
-        }
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
-        }
-    }
 }
 
