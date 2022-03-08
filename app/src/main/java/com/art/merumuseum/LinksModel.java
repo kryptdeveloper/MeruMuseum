@@ -28,7 +28,7 @@ public class LinksModel {
     String getallfinance;
     String guide;
     String history;
-    String ip = "www.elimukenya.co.ke/Izzoh/"  +
+    String ip = "www.elimukenya.co.ke/Izzoh"  +
             "";
     String pContributer;
     String payvr;
@@ -85,17 +85,17 @@ public class LinksModel {
         stringBuilder = new StringBuilder();
         stringBuilder.append(str);
         stringBuilder.append(this.ip);
-        stringBuilder.append("/adminmeru/getrejArtefact.php");
+        stringBuilder.append("/getrejArtefact.php");
         this.rejArtefact = stringBuilder.toString();
         stringBuilder = new StringBuilder();
         stringBuilder.append(str);
         stringBuilder.append(this.ip);
-        stringBuilder.append("/adminmeru/gependArtefact.php");
+        stringBuilder.append("/gependArtefact.php");
         this.peendArtefact = stringBuilder.toString();
         stringBuilder = new StringBuilder();
         stringBuilder.append(str);
         stringBuilder.append(this.ip);
-        stringBuilder.append("/adminmeru/rejectbtnart.php");
+        stringBuilder.append("/rejectbtnart.php");
         this.rejbtncura = stringBuilder.toString();
         stringBuilder = new StringBuilder();
         stringBuilder.append(str);

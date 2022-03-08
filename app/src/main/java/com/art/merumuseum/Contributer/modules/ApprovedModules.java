@@ -98,7 +98,8 @@ public class ApprovedModules extends Fragment {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getContext(), error.toString(), Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getContext(), error.toString(), Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(getContext(), "error", Toast.LENGTH_SHORT).show();
             }
         }
 

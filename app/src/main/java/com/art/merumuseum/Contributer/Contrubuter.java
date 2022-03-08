@@ -15,6 +15,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.art.merumuseum.Contributer.modules.ApprovedModules;
+import com.art.merumuseum.Contributer.modules.Dash;
 import com.art.merumuseum.Contributer.modules.PendingArtefacts;
 import com.art.merumuseum.Contributer.modules.RejectedArtefacts;
 import com.art.merumuseum1.R;
@@ -72,7 +73,7 @@ public class Contrubuter extends AppCompatActivity implements NavigationView.OnN
         name=hh;
         setName(hh);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.ccontent,new ContributeClass()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.ccontent,new Dash()).commit();
 
 
 
@@ -86,9 +87,13 @@ public class Contrubuter extends AppCompatActivity implements NavigationView.OnN
 
 
         switch (item.getItemId()){
+            case R.id.contriDash:
+                fag=new Dash();
+                toolbar.setTitle("Dashboard");
+                break;
 
             case R.id.approvedc:
-                fag=new ApprovedModules();
+                fag=new ContributeClass();
                 toolbar.setTitle("Approved Artefacts");
                 break;
             case R.id.idUploadc:

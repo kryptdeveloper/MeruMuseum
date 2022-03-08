@@ -80,7 +80,15 @@ public class Feedback extends Fragment{
         submitfed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              sendFeedback();
+                if(feed.getText().toString()==""){
+                    Toast.makeText(getContext(), "please enter you feedback", Toast.LENGTH_SHORT).show();
+                    
+                }else{
+
+                    sendFeedback();
+                }
+                
+            
 
             }
         });
@@ -88,6 +96,7 @@ public class Feedback extends Fragment{
     }
 
     private void sendFeedback() {
+        Toast.makeText(getContext(), "yeaa", Toast.LENGTH_SHORT).show();
     }
 
 
