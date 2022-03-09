@@ -9,8 +9,6 @@
     tools:context="com.art.merumuseum.UserInfo.Register">
 
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="1dp"
             android:gravity="center"
             android:text="Create New Account"
             android:textColor="@color/colorPrimaryDark"
@@ -31,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="20dp"
             android:hint="First Name"
             android:padding="5dp" />
@@ -41,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="20dp"
             android:hint="Second Name"
             android:padding="5dp" />
@@ -51,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="20dp"
             android:hint="Email Address"
             android:padding="5dp" />
@@ -61,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="20dp"
             android:hint="Password"
             android:inputType="textPassword"
@@ -72,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:layout_marginRight="20dp"
             android:hint="Mobile"
             android:inputType="number"
@@ -81,13 +79,11 @@
             app:met_errorColor="@color/alignment_marker_color" />
 
 
-
-
         <RadioGroup
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="3dp"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -117,8 +113,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"
             android:gravity="center"
             android:text="choose user type below"
             android:textColor="@color/colorPrimary"
@@ -141,6 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
             android:background="@color/colorPrimaryDark"
             android:text="Register"
             android:textAllCaps="false"

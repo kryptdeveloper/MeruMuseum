@@ -74,28 +74,28 @@ public class Dash extends Fragment {
         all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "gsdfbu ga", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "upload", Toast.LENGTH_SHORT).show();
                 getFragmentManager().beginTransaction().replace(R.id.ccontent, new ContributeClass()).commit();
             }
         });
         approv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "gsdfbu ga", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "approved artefacts", Toast.LENGTH_SHORT).show();
                 getFragmentManager().beginTransaction().replace(R.id.ccontent, new ApprovedModules()).commit();
             }
         });
         rejected.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "gsdfbu ga", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "rejected artefact", Toast.LENGTH_SHORT).show();
                 getFragmentManager().beginTransaction().replace(R.id.ccontent, new RejectedArtefacts()).commit();
             }
         });
         pending.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "gsdfbu ga", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "pending artefact", Toast.LENGTH_SHORT).show();
                 getFragmentManager().beginTransaction().replace(R.id.ccontent, new PendingArtefacts()).commit();
             }
         });

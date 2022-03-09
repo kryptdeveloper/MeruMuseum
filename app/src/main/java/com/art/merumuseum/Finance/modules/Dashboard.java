@@ -80,28 +80,28 @@ public class Dashboard extends Fragment {
         all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "gsdfbu ga", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "all transactions", Toast.LENGTH_SHORT).show();
                 getFragmentManager().beginTransaction().replace(R.id.fcontent, new Alltransactions()).commit();
             }
         });
         approv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "gsdfbu ga", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "all approved transactions", Toast.LENGTH_SHORT).show();
                 getFragmentManager().beginTransaction().replace(R.id.fcontent, new Approved()).commit();
             }
         });
         rejected.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "gsdfbu ga", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "all rejected transctions", Toast.LENGTH_SHORT).show();
                 getFragmentManager().beginTransaction().replace(R.id.fcontent, new Rejected()).commit();
             }
         });
         pending.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "gsdfbu ga", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "all pending transctions", Toast.LENGTH_SHORT).show();
                 getFragmentManager().beginTransaction().replace(R.id.fcontent, new Pending()).commit();
             }
         });

@@ -2,6 +2,7 @@ package com.art.merumuseum.modules;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -22,13 +23,29 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import com.art.merumuseum.LinksModel;
+import com.art.merumuseum.Main;
 import com.art.merumuseum1.R;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Feedback extends Fragment{
     Button submitfed;
+    LinksModel mm;
     Spinner choose;
     EditText feed;
+    private RequestQueue mRequestQueue;
+    ProgressDialog progressDialog;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -38,6 +55,7 @@ public class Feedback extends Fragment{
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        mm=new LinksModel();
         submitfed=view.findViewById(R.id.submitFedbtn);
         choose=view.findViewById(R.id.cuser);
         feed=view.findViewById(R.id.fedContent);
@@ -85,7 +103,7 @@ public class Feedback extends Fragment{
                     
                 }else{
 
-                    sendFeedback();
+                  //  sendFeedback();
                 }
                 
             
@@ -95,9 +113,65 @@ public class Feedback extends Fragment{
 
     }
 
-    private void sendFeedback() {
-        Toast.makeText(getContext(), "yeaa", Toast.LENGTH_SHORT).show();
-    }
+
+        private void  sendFeedback(final String amount, final String date, final String name,final String mpesa ) {
+
+                progressDialog.setTitle("Sending feedback");
+                progressDialog.setCancelable(false);
+                progressDialog.setCanceledOnTouchOutside(false);
+                progressDialog.setIndeterminate(false);
+                progressDialog.show();
+                mRequestQueue = Volley.newRequestQueue(getContext());
+
+
+                StringRequest request = new StringRequest(Request.Method.POST, mm.getBook(), new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+
+                        if (response.equals("Sent")) {
+                            progressDialog.dismiss();
+                            Toast.makeText(getContext(), "Thank you for your feedback!", Toast.LENGTH_SHORT).show();
+
+                        } else {
+                            Toast.makeText(getContext(), "Please try checking your internet and Send your feed back again", Toast.LENGTH_SHORT).show();
+                            progressDialog.dismiss();
+
+
+
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getContext(), error.toString(), Toast.LENGTH_SHORT).show();
+                        progressDialog.dismiss();
+
+                    }
+                }) {
+                    @Nullable
+                    @Override
+                    protected Map<String, String> getParams() throws AuthFailureError {
+                        HashMap<String, String> param = new HashMap<>();
+                        param.put("fname", name);
+                        param.put("sname", name);
+                        param.put("email", name);
+                        param.put("time", amount);
+                        param.put("date", date);
+                        param.put("feed", mpesa);
+
+
+                        return param;
+                    }
+                };
+                request.setShouldCache(false);
+                mRequestQueue.add(request);
+
+
+        }
+
+
 
 
 }
