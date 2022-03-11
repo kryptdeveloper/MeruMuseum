@@ -81,13 +81,17 @@ public class ComingVisitors extends Fragment {
                             for (int i = 0; i < jsonArray.length(); i++) {
 
                                 JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                String tranid = jsonObject.getString("id");
+                                String fname = jsonObject.getString("fname");
+                                String sname = jsonObject.getString("sname");
                                 String Amount = jsonObject.getString("amount");
                                 String email = jsonObject.getString("name");
                                 String date = jsonObject.getString("date");
                                 String mpesacode = jsonObject.getString("mpesacode");
-                                String tranid = jsonObject.getString("id");
+
                                 String status=jsonObject.getString("status");
-                                guideobject object = new guideobject(Amount,date,email,status,tranid);
+                                String completion=jsonObject.getString("comp");
+                                guideobject object = new guideobject(tranid,fname,sname, Amount, email,date, mpesacode, status, completion);
                                 obj.add(object);
                             }
 

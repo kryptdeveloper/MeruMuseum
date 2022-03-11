@@ -39,7 +39,7 @@ public class ArtefactObject {
     }
 
     public String getImageurl() {
-        return "http://"+ll.getIp()+"/adminmeru/images/"+imageurl+".jpg";
+        return "https://"+ll.getIp()+"/images/"+imageurl+".jpg";
     }
 
     public void setImageurl(String imageurl) {

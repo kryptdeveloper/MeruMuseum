@@ -1,19 +1,29 @@
 package com.art.merumuseum.GuideModules.guide;
 
+import android.telephony.mbms.StreamingServiceInfo;
+
 public class guideobject {
-
-    String amount;
-    String date;
-    String email;
-    String status;
     String id;
+    String fname;
+    String sname;
+    String amount;
+    String getFname;
+    String date;
+    String mpesacode;
 
-    public guideobject(String amount, String date, String email, String status, String id) {
-        this.amount = amount;
-        this.date = date;
-        this.email = email;
-        this.status = status;
+    String status;
+    String comp;
+
+    public guideobject(String id, String fname, String sname, String amount, String getFname, String date, String mpesacode, String status, String comp) {
         this.id = id;
+        this.fname = fname;
+        this.sname = sname;
+        this.amount = amount;
+        this.getFname = getFname;
+        this.date = date;
+        this.mpesacode = mpesacode;
+        this.status = status;
+        this.comp = comp;
     }
 
     public String getId() {
@@ -24,12 +34,20 @@ public class guideobject {
         this.id = id;
     }
 
-    public String getStatus() {
-        return status;
+    public String getFname() {
+        return fname;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setFname(String fname) {
+        this.fname = fname;
+    }
+
+    public String getSname() {
+        return sname;
+    }
+
+    public void setSname(String sname) {
+        this.sname = sname;
     }
 
     public String getAmount() {
@@ -40,6 +58,14 @@ public class guideobject {
         this.amount = amount;
     }
 
+    public String getGetFname() {
+        return getFname;
+    }
+
+    public void setGetFname(String getFname) {
+        this.getFname = getFname;
+    }
+
     public String getDate() {
         return date;
     }
@@ -48,11 +74,27 @@ public class guideobject {
         this.date = date;
     }
 
-    public String getEmail() {
-        return email;
+    public String getMpesacode() {
+        return mpesacode;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setMpesacode(String mpesacode) {
+        this.mpesacode = mpesacode;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getComp() {
+        return comp;
+    }
+
+    public void setComp(String comp) {
+        this.comp = comp;
     }
 }

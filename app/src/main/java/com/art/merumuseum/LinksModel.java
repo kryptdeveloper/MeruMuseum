@@ -42,7 +42,7 @@ public class LinksModel {
 
     public LinksModel() {
         StringBuilder stringBuilder = new StringBuilder();
-        String str = "http://";
+        String str = "https://";
         stringBuilder.append(str);
         stringBuilder.append(this.ip);
         stringBuilder.append("/insertcontributer.php");
