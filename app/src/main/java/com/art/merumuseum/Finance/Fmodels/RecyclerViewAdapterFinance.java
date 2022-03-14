@@ -63,6 +63,7 @@ public class RecyclerViewAdapterFinance extends RecyclerView.Adapter<RecyclerVie
 
         holder.status.setText("Status:"+payObjects.get(position).getStatus());
         holder.amount.setText("Amount:"+payObjects.get(position).getAmount());
+        holder.amount.setText("Name:"+payObjects.get(position).getFname()+" "+payObjects.get(position).getSname());
         holder.mpesacode.setText("Mpesa Code:"+payObjects.get(position).getMpesacode());
         holder.email.setText("Email :"+payObjects.get(position).getName());
         ghghdf=payObjects.get(position).getName();
@@ -135,13 +136,14 @@ public class RecyclerViewAdapterFinance extends RecyclerView.Adapter<RecyclerVie
     };
 
     public static class HolderFinance extends RecyclerView.ViewHolder{
-        TextView amount,date,email,mpesacode,status;
+        TextView amount,date,email,mpesacode,status,name;
         Button approv;
 
 
         public HolderFinance(@NonNull View itemView) {
             super(itemView);
             amount=itemView.findViewById(R.id.amountapprov);
+            name=itemView.findViewById(R.id.namepayID);
             date=itemView.findViewById(R.id.dateApprov);
             email=itemView.findViewById(R.id.emailapprov);
             status=itemView.findViewById(R.id.statusapprov);

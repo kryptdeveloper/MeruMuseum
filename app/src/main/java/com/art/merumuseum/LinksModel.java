@@ -39,6 +39,22 @@ public class LinksModel {
     String uploadurl;
     String visitor;
     String visitorurl;
+    String userfeed;
+    String fedFinace;
+    String fedcura;
+    String fedguide;
+
+    public String getFedFinace() {
+        return fedFinace;
+    }
+
+    public String getFedcura() {
+        return fedcura;
+    }
+
+    public String getFedguide() {
+        return fedguide;
+    }
 
     public LinksModel() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -51,6 +67,26 @@ public class LinksModel {
         stringBuilder.append(str);
         stringBuilder.append(this.ip);
         stringBuilder.append("/insert.php");
+        this.userfeed = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(str);
+        stringBuilder.append(this.ip);
+        stringBuilder.append("/feedback/send.php");
+        this.fedguide = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(str);
+        stringBuilder.append(this.ip);
+        stringBuilder.append("/feedback/guide.php");
+        this.fedcura = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(str);
+        stringBuilder.append(this.ip);
+        stringBuilder.append("/feedback/curatorfeed.php");
+        this.fedFinace = stringBuilder.toString();
+        stringBuilder = new StringBuilder();
+        stringBuilder.append(str);
+        stringBuilder.append(this.ip);
+        stringBuilder.append("/feedback/Finance.php");
         this.visitorurl = stringBuilder.toString();
         stringBuilder = new StringBuilder();
         stringBuilder.append(str);
@@ -342,6 +378,13 @@ public class LinksModel {
 
     public String getBook() {
         return this.book;
+    }
+    public String getUserfeed() {
+        return userfeed;
+    }
+
+    public void setUserfeed(String userfeed) {
+        this.userfeed = userfeed;
     }
 
     public String getCurator() {

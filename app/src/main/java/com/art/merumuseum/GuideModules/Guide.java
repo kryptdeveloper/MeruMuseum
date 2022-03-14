@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 
+import com.art.merumuseum.GuideModules.Feedback.Feedback;
 import com.art.merumuseum1.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -41,6 +42,10 @@ public class Guide extends AppCompatActivity implements BottomNavigationView.OnN
                 break;
             case R.id.scuraevents:
                 fag = new Completed();
+
+                break;
+            case R.id.feedbackgui:
+                fag = new Feedback();
 
                 break;
         }

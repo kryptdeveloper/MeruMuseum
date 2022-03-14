@@ -33,6 +33,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.art.merumuseum.Finance.Alltransactions;
+import com.art.merumuseum.Finance.Feedback.Feedback;
 import com.art.merumuseum.Finance.Fmodels.PayObject;
 import com.art.merumuseum.Finance.Fmodels.RecyclerViewAdapterFinance;
 import com.art.merumuseum.Finance.ReportsModulesFinance;
@@ -49,7 +50,7 @@ import java.util.ArrayList;
 public class Dashboard extends Fragment {
     CardView pending,all,approv,rejected;
     private com.google.android.material.appbar.MaterialToolbar toolbar;
-    Button receipt;
+    Button receipt,feed;
 
 
     @Nullable
@@ -67,6 +68,7 @@ public class Dashboard extends Fragment {
         approv=view.findViewById(R.id.aprovcardtrans);
         rejected=view.findViewById(R.id.rejectedcardtrans);
         receipt=view.findViewById(R.id.btndownloadf);
+        feed=view.findViewById(R.id.feedbtnf);
         toolbar=view.findViewById(R.id.toolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
 
@@ -75,6 +77,13 @@ public class Dashboard extends Fragment {
             public void onClick(View view) {
 
                 getFragmentManager().beginTransaction().replace(R.id.fcontent, new ReportsModulesFinance()).commit();
+            }
+        });
+        feed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                getFragmentManager().beginTransaction().replace(R.id.fcontent, new Feedback()).commit();
             }
         });
         all.setOnClickListener(new View.OnClickListener() {

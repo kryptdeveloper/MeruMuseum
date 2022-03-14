@@ -43,6 +43,8 @@ public class Feedback extends Fragment{
     LinksModel mm;
     Spinner choose;
     EditText feed;
+    String uRl="";
+    String receiver="";
     private RequestQueue mRequestQueue;
     ProgressDialog progressDialog;
 
@@ -56,6 +58,7 @@ public class Feedback extends Fragment{
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mm=new LinksModel();
+        progressDialog=new ProgressDialog(getContext());
         submitfed=view.findViewById(R.id.submitFedbtn);
         choose=view.findViewById(R.id.cuser);
         feed=view.findViewById(R.id.fedContent);
@@ -69,16 +72,25 @@ public class Feedback extends Fragment{
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i){
                     case 0:
+                        uRl=mm.getUserfeed();
+                        receiver="curator";
+
                         Toast.makeText(getContext(), "Curator", Toast.LENGTH_SHORT).show();
                         break;
                     case 1:
+                        uRl=mm.getUserfeed();
+                        receiver="finance";
                         Toast.makeText(getContext(), "Finance", Toast.LENGTH_SHORT).show();
                         break;
                     case 2:
+                        uRl=mm.getUserfeed();
+                        receiver="guide";
                         Toast.makeText(getContext(), "Guide", Toast.LENGTH_SHORT).show();
 
                         break;
                     case 3:
+                        uRl=mm.getUserfeed();
+                        receiver="admin";
                         Toast.makeText(getContext(), "admin", Toast.LENGTH_SHORT).show();
 
                         break;
@@ -103,7 +115,7 @@ public class Feedback extends Fragment{
                     
                 }else{
 
-                  //  sendFeedback();
+                   sendFeedback("myname",feed.getText().toString(),receiver);
                 }
                 
             
@@ -114,7 +126,7 @@ public class Feedback extends Fragment{
     }
 
 
-        private void  sendFeedback(final String amount, final String date, final String name,final String mpesa ) {
+        private void  sendFeedback(final String mail,final String feed, final String receiver) {
 
                 progressDialog.setTitle("Sending feedback");
                 progressDialog.setCancelable(false);
@@ -124,12 +136,12 @@ public class Feedback extends Fragment{
                 mRequestQueue = Volley.newRequestQueue(getContext());
 
 
-                StringRequest request = new StringRequest(Request.Method.POST, mm.getBook(), new Response.Listener<String>() {
+                StringRequest request = new StringRequest(Request.Method.POST, mm.getUserfeed(), new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
 
-                        if (response.equals("Sent")) {
+                        if (response.equals("sent")) {
                             progressDialog.dismiss();
                             Toast.makeText(getContext(), "Thank you for your feedback!", Toast.LENGTH_SHORT).show();
 
@@ -154,12 +166,12 @@ public class Feedback extends Fragment{
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         HashMap<String, String> param = new HashMap<>();
-                        param.put("fname", name);
-                        param.put("sname", name);
-                        param.put("email", name);
-                        param.put("time", amount);
-                        param.put("date", date);
-                        param.put("feed", mpesa);
+//                        param.put("fname", name);
+                       param.put("module", receiver);
+                        param.put("email", mail);
+////                        param.put("time", amount);
+////                        param.put("date", date);
+                        param.put("feed", feed);
 
 
                         return param;

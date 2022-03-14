@@ -18,6 +18,7 @@ import com.art.merumuseum.CuratorModules.ApproveArtefacts.ApproveArtefacts;
 import com.art.merumuseum.CuratorModules.ApproveArtefacts.PendingArtefacts;
 import com.art.merumuseum.CuratorModules.ApproveArtefacts.RealApproveArtefacts;
 import com.art.merumuseum.CuratorModules.ApproveArtefacts.RejectedArtefacts;
+import com.art.merumuseum.CuratorModules.Feedback.Feedback;
 import com.art.merumuseum.CuratorModules.Feedback.SeeFeedback;
 import com.art.merumuseum1.R;
 import com.art.merumuseum.modules.VrModule.UploadData;
@@ -63,7 +64,7 @@ public class Curator extends AppCompatActivity implements NavigationView.OnNavig
         switch (item.getItemId()) {
 
             case R.id.getFeedbck:
-                fag = new SeeFeedback();
+                fag = new Feedback();
                 loadFragment(fag);
 
                 break;
@@ -92,6 +93,7 @@ public class Curator extends AppCompatActivity implements NavigationView.OnNavig
                 startActivity(new Intent(Curator.this, UploadData.class));
 //                toolbar.setTitle("Create events");
                 break;
+
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.curatorframe,fag).commit();
         drawerLayout.closeDrawer(GravityCompat.START);

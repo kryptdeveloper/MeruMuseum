@@ -41,7 +41,7 @@ public class guiderecyclerview extends RecyclerView.Adapter<guiderecyclerview.Ho
     public void onBindViewHolder(@NonNull Holder holder, @SuppressLint("RecyclerView") int position) {
         holder.hamount.setText(guideobjects.get(position).getAmount());
         holder.hdate.setText(guideobjects.get(position).getDate());
-        holder.hemail.setText(guideobjects.get(position).getEmail());
+        holder.hemail.setText(guideobjects.get(position).getFname());
         holder.hstatus.setText(guideobjects.get(position).getStatus());
         holder.hbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +50,7 @@ public class guiderecyclerview extends RecyclerView.Adapter<guiderecyclerview.Ho
                 inte.putExtra("amount",guideobjects.get(position).getAmount());
                 inte.putExtra("date",guideobjects.get(position).getDate());
                 inte.putExtra("code",guideobjects.get(position).getStatus());
-                inte.putExtra("email",guideobjects.get(position).getEmail());
+                inte.putExtra("email",guideobjects.get(position).getFname());
                 inte.putExtra("transid",guideobjects.get(position).getId());
                 view.getContext().startActivity(inte);
 

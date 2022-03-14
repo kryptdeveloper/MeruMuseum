@@ -23,4 +23,13 @@
         android:icon="@drawable/visitors"
         />
 
+    <item
+
+        android:id="@+id/feedbackgui"
+        android:title="Visitors"
+        android:icon="@drawable/feedback"
+        />
+
+
+
 </menu>

@@ -155,12 +155,24 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/btndownloadf"
+        android:id="@+id/feedbtnf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/pendingcardf"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="See feedback" />
+
+    <Button
+        android:id="@+id/btndownloadf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedbtnf"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
         android:backgroundTint="@color/colorPrimary"
