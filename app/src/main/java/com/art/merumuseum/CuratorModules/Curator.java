@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -20,6 +21,7 @@ import com.art.merumuseum.CuratorModules.ApproveArtefacts.RealApproveArtefacts;
 import com.art.merumuseum.CuratorModules.ApproveArtefacts.RejectedArtefacts;
 import com.art.merumuseum.CuratorModules.Feedback.Feedback;
 import com.art.merumuseum.CuratorModules.Feedback.SeeFeedback;
+import com.art.merumuseum.UserInfo.Signin;
 import com.art.merumuseum1.R;
 import com.art.merumuseum.modules.VrModule.UploadData;
 import com.google.android.material.navigation.NavigationView;
@@ -30,12 +32,21 @@ public class Curator extends AppCompatActivity implements NavigationView.OnNavig
     private Toolbar toolbar;
     private ActionBarDrawerToggle actionBarDrawerToggle;
     TextView usernm;
+    Button log;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_curators);
+        log=findViewById(R.id.logout_c);
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Curator.this, Signin.class));
+                finish();
+            }
+        });
 
         drawerLayout=findViewById(R.id.curadrawer);
         navigationView=findViewById(R.id.curanav);
@@ -89,10 +100,10 @@ public class Curator extends AppCompatActivity implements NavigationView.OnNavig
                 loadFragment(fag);
 //                toolbar.setTitle("Create events");
                 break;
-            case R.id.vr:
-                startActivity(new Intent(Curator.this, UploadData.class));
-//                toolbar.setTitle("Create events");
-                break;
+//            case R.id.vr:
+//                startActivity(new Intent(Curator.this, UploadData.class));
+////                toolbar.setTitle("Create events");
+//                break;
 
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.curatorframe,fag).commit();

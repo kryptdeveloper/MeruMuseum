@@ -116,9 +116,9 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="3dp"
             android:gravity="center"
-            android:text="choose user type below"
+            android:text="*click below to choose user account"
             android:textColor="@color/colorPrimary"
-            android:textSize="21sp"
+            android:textSize="18sp"
             android:textStyle="italic" />
 
         <Spinner

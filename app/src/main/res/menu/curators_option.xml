@@ -22,10 +22,10 @@
         android:icon="@drawable/pending"
         android:title="Pending arts" />
 
-    <item
-        android:id="@+id/vr"
-        android:icon="@drawable/pending"
-        android:title="Upload Vr" />
+<!--    <item-->
+<!--        android:id="@+id/vr"-->
+<!--        android:icon="@drawable/pending"-->
+<!--        android:title="Upload Vr" />-->
 
     <item
         android:id="@+id/getFeedbck"

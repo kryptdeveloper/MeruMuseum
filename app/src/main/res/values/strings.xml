@@ -1,8 +1,27 @@
 <?xml version="1.0"?>
 
 <resources>
-
     <string name="app_name">MeruMuseum</string>
+
+    <string name="helprev">
+
+        <font color="#E46D45"><b>Buy tickets</b> </font> - here you will be able to buy tickets\n\n
+First choose if you are a citizen,resident or non resident\n
+Then enter the number of adult(s)  and kid(s)
+The proceed to pay\n\n
+
+<font color="#E46D45"><b>VR</b> </font>-here you will be able to explore the museum\n
+In virtual reality ..tilt your device to landscape or of you have a vr headset you can use it.\n\n
+
+<font color="#E46D45"><b>My Activities</b> </font>- here you will get your ticket  if its approved\n\n
+
+<font color="#E46D45"><b>Feedback</b> </font>-we would like to hear your feedback you can send feedback to either Admin, Curator,Guide or finance.\n\n
+<font color="#E46D45"><b>Learn</b> </font>- here you will also be to get to know more about the museum, artefacts and overall more about the history.\n\n
+
+
+    </string>
+
+
 
     <string name="open">open</string>
 
@@ -58,6 +77,46 @@
         <item>crocodile</item>
 
     </string-array>
+    <string name="introL">
+        <b>Meru Museum</b>\nwas established in 1974,\n
+        from a District Commissioner building during the colonial days.\n
+        The building is the heart of the museum and was built in 1916,\n
+        the DC was part of administration in Mt.Kenya region.\n
+    </string>
+
+    <string name="locC">
+        Museums have curators,they are a keepers or custodians of collections.
+        to Contact the curator
+        The Curator\n\n
+            Meru Museum\n
+            P.O.Box 597- 60200, Meru.\n\n
+            Tel: 064- 32482
+
+    </string>
+    <string name="arte">
+  Meru Museum also has artefacts wood curvings,art, paintings, tools\n
+        that have been collected over time from Ameru people.
+
+    </string>
+    <string name="anime">
+  Meru Museum has a small animal part that has indigenous animals, birds and snakes.
+ And also exinct animals which are stuffed.
+
+    </string>
+    <string name="herbz">
+ You will be able learn more about the traditional ways that Ameeru used for medicine.
+        You will be able to see herbs and how they were used to treat aliments and other conditions.
+    </string>
+    <string name="hisz">
+ Evolution of mankind and how we came to be ,many evidence of early man are shown in the museum.
+    </string>
+    <string name="homez">
+        A typical Ameru home set up is presented in museum. The traditional homestead is also important aspect of the society.
+    </string>
+    <string name="njuri">
+        <font color="#E46D45">Njuri Ncheke</font>
+        The structure of Ameru community and how the society is, the clan of elders  are the representation of the community.
+    </string>
 
     <string name="ipw">192.168.72.187</string>
 

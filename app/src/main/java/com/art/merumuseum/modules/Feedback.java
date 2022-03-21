@@ -110,7 +110,7 @@ public class Feedback extends Fragment{
         submitfed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(feed.getText().toString()==""){
+                if(feed.getText().toString().equals("")){
                     Toast.makeText(getContext(), "please enter you feedback", Toast.LENGTH_SHORT).show();
                     
                 }else{
@@ -136,17 +136,17 @@ public class Feedback extends Fragment{
                 mRequestQueue = Volley.newRequestQueue(getContext());
 
 
-                StringRequest request = new StringRequest(Request.Method.POST, mm.getUserfeed(), new Response.Listener<String>() {
+                StringRequest request = new StringRequest(Request.Method.POST,uRl, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
 
-                        if (response.equals("sent")) {
+                        if (response.equals("se")) {
                             progressDialog.dismiss();
                             Toast.makeText(getContext(), "Thank you for your feedback!", Toast.LENGTH_SHORT).show();
 
                         } else {
-                            Toast.makeText(getContext(), "Please try checking your internet and Send your feed back again", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "Please try checking your internet and Send your feedback again", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
 
 

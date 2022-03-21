@@ -1,8 +1,10 @@
 package com.art.merumuseum.Contributer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,6 +20,8 @@ import com.art.merumuseum.Contributer.modules.ApprovedModules;
 import com.art.merumuseum.Contributer.modules.Dash;
 import com.art.merumuseum.Contributer.modules.PendingArtefacts;
 import com.art.merumuseum.Contributer.modules.RejectedArtefacts;
+import com.art.merumuseum.Finance.FinanceActivity;
+import com.art.merumuseum.UserInfo.Signin;
 import com.art.merumuseum1.R;
 import com.google.android.material.navigation.NavigationView;
 
@@ -40,6 +44,7 @@ public class Contrubuter extends AppCompatActivity implements NavigationView.OnN
     }
 
     String userem="";
+    Button log;
 
 
 
@@ -48,6 +53,14 @@ public class Contrubuter extends AppCompatActivity implements NavigationView.OnN
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contrubuter);
+        log=findViewById(R.id.logout_co);
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Contrubuter.this, Signin.class));
+                finish();
+            }
+        });
 
 
         drawerLayout=findViewById(R.id.cdrawer);

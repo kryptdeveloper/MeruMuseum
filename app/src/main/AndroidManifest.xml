@@ -64,7 +64,11 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name="com.art.merumuseum.Main"
-            android:theme="@style/AppTheme.cor" />
+            android:theme="@style/AppTheme.cor" >
+
+
+
+        </activity>
         <activity
             android:name="com.art.merumuseum.MainActivity"
             android:theme="@style/AppTheme.cor" >
@@ -72,6 +76,7 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name="com.art.merumuseum.modules.VrModule.MainActivity" />
         <activity android:name="com.art.merumuseum.modules.VrModule.VrActivity" />

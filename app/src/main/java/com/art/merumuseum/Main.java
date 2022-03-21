@@ -14,11 +14,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.art.merumuseum.SearchModules.Search;
 import com.art.merumuseum.UserInfo.Model;
+import com.art.merumuseum.UserInfo.Signin;
 import com.art.merumuseum.modules.BuyATicket;
 import com.art.merumuseum.modules.Feedback;
 import com.art.merumuseum.modules.Help;
@@ -26,7 +28,6 @@ import com.art.merumuseum.modules.Home;
 import com.art.merumuseum.modules.Learn;
 
 import com.art.merumuseum.modules.ModelMyActivitys.MyActivitys;
-import com.art.merumuseum.modules.VrModule.MainActivity;
 import com.art.merumuseum.modules.VrModule.ViewData;
 import com.art.merumuseum.modules.VrModule.ViewData2;
 import com.art.merumuseum.modules.paymentVr.PaymentVR;
@@ -40,6 +41,7 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
   private ActionBarDrawerToggle actionBarDrawerToggle;
   private TextView usernm;
   public static String name="";
+  Button logout;
   ModelDet modelDet;
 
   public static String getName() {
@@ -63,6 +65,8 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main3);
+    logout=findViewById(R.id.logout_);
+
     drawerLayout=findViewById(R.id.drawer);
     navigationView=findViewById(R.id.nav);
     toolbar=findViewById(R.id.toolbar);
@@ -95,6 +99,14 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
     getSupportFragmentManager().beginTransaction().replace(R.id.content,new Home())
             .addToBackStack(" ")
             .commit();
+
+    logout.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        startActivity(new Intent(Main.this, Signin.class) );
+        finish();
+      }
+    });
 
   }
 
@@ -142,6 +154,7 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
         loadFragment(fag);
         toolbar.setTitle("My Activities");
         break;
+
     }
     // getSupportFragmentManager().beginTransaction().replace(R.id.content,fag).commit();
 

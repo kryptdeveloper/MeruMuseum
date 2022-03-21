@@ -63,8 +63,9 @@ public class Feedback extends Fragment {
                             for (int i = 0; i < jsonArray.length(); i++) {
 
                                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                                String feed = jsonObject.getString("amount");
-                                String email = jsonObject.getString("name");
+                                String feed = jsonObject.getString("descri");
+                                String email = jsonObject.getString("senderemail");
+                                Toast.makeText(getContext(), feed +email, Toast.LENGTH_SHORT).show();
 
                                 FeedbackObj object = new FeedbackObj(email,feed);
                                 obj.add(object);

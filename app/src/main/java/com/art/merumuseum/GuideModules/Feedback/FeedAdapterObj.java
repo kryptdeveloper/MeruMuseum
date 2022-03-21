@@ -27,8 +27,8 @@ public class FeedAdapterObj extends RecyclerView.Adapter<FeedAdapterObj.HolderFe
     @Override
     public HolderFeed onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v= LayoutInflater.from(context).inflate(R.layout.feedbackshow,parent,false);
-      HolderFeed holderFinance=new HolderFeed(v);
-        return holderFinance;
+      HolderFeed holder=new HolderFeed(v);
+        return holder;
     }
 
     @Override

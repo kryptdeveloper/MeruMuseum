@@ -39,8 +39,21 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:id="@+id/logout_f"
+                android:background="@color/colorPrimaryDark"
+                android:layout_above="@+id/drawertxt_f"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="23dp"
+
+                />
+
 
             <TextView
+                android:id="@+id/drawertxt_f"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"

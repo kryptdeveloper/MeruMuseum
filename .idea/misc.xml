@@ -83,7 +83,9 @@
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/drawable/dashboard.xml" value="0.21666666666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_approve_model.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_contrubuter.xml" value="0.19114583333333332" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_curators.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_finance.xml" value="0.19114583333333332" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_guide.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_main3.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/activity_receipt2.xml" value="0.22447916666666667" />
@@ -99,7 +101,10 @@
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/dashcontri.xml" value="0.19114583333333332" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/feedbackmodule.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/feedbackshow.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/guidemodellayout.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/helpmodule.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/homelayout.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/learnmodule.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/myactivities.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/receipt.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/rejectedfinace.xml" value="0.22447916666666667" />
@@ -109,6 +114,8 @@
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/layout/userinfo_activity_main4.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/menu/contributermenu.xml" value="0.19114583333333332" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/menu/curators_option.xml" value="0.18888888888888888" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/menu/drawer_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/revised/MeruMuseum/app/src/main/res/menu/guide.xml" value="0.22447916666666667" />
         <entry key="..\:/revised/MeruMuseum/app/src/main/res/menu/guide_options.xml" value="0.22447916666666667" />
       </map>
     </option>

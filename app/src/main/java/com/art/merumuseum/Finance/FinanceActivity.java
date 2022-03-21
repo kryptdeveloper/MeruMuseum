@@ -11,12 +11,14 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +31,7 @@ import com.art.merumuseum.Contributer.ContributeClass;
 import com.art.merumuseum.Contributer.modules.ApprovedModules;
 import com.art.merumuseum.Contributer.modules.PendingArtefacts;
 import com.art.merumuseum.Contributer.modules.RejectedArtefacts;
+import com.art.merumuseum.CuratorModules.Curator;
 import com.art.merumuseum.Finance.Fmodels.PayObject;
 import com.art.merumuseum.Finance.Fmodels.RecyclerViewAdapterFinance;
 import com.art.merumuseum.Finance.modules.Approved;
@@ -40,6 +43,7 @@ import com.art.merumuseum.LearnModules.modelEvents.EventObject;
 import com.art.merumuseum.LearnModules.modelEvents.RecylerViewAdapter;
 import com.art.merumuseum.LinksModel;
 
+import com.art.merumuseum.UserInfo.Signin;
 import com.art.merumuseum1.R;
 import com.google.android.material.navigation.NavigationView;
 
@@ -57,12 +61,20 @@ public class FinanceActivity extends AppCompatActivity implements NavigationView
     TextView usernm;
     RecyclerViewAdapterFinance adapter;
     private ArrayList<PayObject> exampleList;
-
+   Button log;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finance);
+        log=findViewById(R.id.logout_f);
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FinanceActivity.this, Signin.class));
+                finish();
+            }
+        });
         ArrayList<PayObject> exampleList = new ArrayList<>();
         adapter = new RecyclerViewAdapterFinance(getApplicationContext(),exampleList);
 

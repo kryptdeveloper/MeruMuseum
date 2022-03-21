@@ -28,27 +28,27 @@ public class Learn extends Fragment{
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        events=view.findViewById(R.id.eventbtn);
-        map=view.findViewById(R.id.mapbtn);
-        opentimes=view.findViewById(R.id.time_onbtn);
-        map.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(),Map.class));
-            }
-        });
-        opentimes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(),Map.class));
-            }
-        });
-        events.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(), Events.class));
-            }
-        });
+//        events=view.findViewById(R.id.eventbtn);
+//        map=view.findViewById(R.id.mapbtn);
+//        opentimes=view.findViewById(R.id.time_onbtn);
+//        map.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(getActivity(),Map.class));
+//            }
+//        });
+//        opentimes.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(getActivity(),Map.class));
+//            }
+//        });
+//        events.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(getActivity(), Events.class));
+//            }
+//        });
 
 
     }
