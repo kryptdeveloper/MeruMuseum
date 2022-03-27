@@ -36,8 +36,8 @@
 
         <ImageView
             android:id="@+id/aprovactimag"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/map"
             android:textSize="21sp"
@@ -82,6 +82,27 @@
             android:text="Reject"
             android:textSize="21sp"
             android:textStyle="bold" />
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:hint="reasons for rejection"
+            android:visibility="gone"
+
+            android:id="@+id/rejectdetidcura"
+            android:background="@drawable/edittext"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+            />
+        <Button
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/subRejectidcura"
+            android:layout_margin="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+
+            />
 
     </LinearLayout>
 

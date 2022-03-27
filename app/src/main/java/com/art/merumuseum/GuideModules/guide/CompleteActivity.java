@@ -86,10 +86,10 @@ public class CompleteActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if (response.equals("sucees")){
-                    Toast.makeText(CompleteActivity.this, "visitor did not come complete", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CompleteActivity.this, "task complete", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
                 }else {
-                    Toast.makeText(CompleteActivity.this, " Not Approved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CompleteActivity.this, " not succesful try again!", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
 
                 }
@@ -131,10 +131,10 @@ public class CompleteActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if (response.equals("sucees")){
-                    Toast.makeText(CompleteActivity.this, "Visitor complete", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CompleteActivity.this, "Visitor completed", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
                 }else {
-                    Toast.makeText(CompleteActivity.this, " Visitor task did not complete", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CompleteActivity.this, "not succesful", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
 
                 }

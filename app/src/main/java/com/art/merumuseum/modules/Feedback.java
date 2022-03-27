@@ -24,6 +24,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -42,8 +43,9 @@ public class Feedback extends Fragment{
     Button submitfed;
     LinksModel mm;
     Spinner choose;
+    Main main;
     EditText feed;
-    String uRl="";
+    String link="";
     String receiver="";
     private RequestQueue mRequestQueue;
     ProgressDialog progressDialog;
@@ -58,6 +60,7 @@ public class Feedback extends Fragment{
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mm=new LinksModel();
+        main=new Main();
         progressDialog=new ProgressDialog(getContext());
         submitfed=view.findViewById(R.id.submitFedbtn);
         choose=view.findViewById(R.id.cuser);
@@ -72,26 +75,26 @@ public class Feedback extends Fragment{
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i){
                     case 0:
-                        uRl=mm.getUserfeed();
+                        link=mm.getUserfeed();
                         receiver="curator";
 
-                        Toast.makeText(getContext(), "Curator", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), receiver, Toast.LENGTH_SHORT).show();
                         break;
                     case 1:
-                        uRl=mm.getUserfeed();
+
                         receiver="finance";
-                        Toast.makeText(getContext(), "Finance", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), receiver, Toast.LENGTH_SHORT).show();
                         break;
                     case 2:
-                        uRl=mm.getUserfeed();
+
                         receiver="guide";
-                        Toast.makeText(getContext(), "Guide", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), receiver, Toast.LENGTH_SHORT).show();
 
                         break;
                     case 3:
-                        uRl=mm.getUserfeed();
+
                         receiver="admin";
-                        Toast.makeText(getContext(), "admin", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), receiver, Toast.LENGTH_SHORT).show();
 
                         break;
 
@@ -115,7 +118,7 @@ public class Feedback extends Fragment{
                     
                 }else{
 
-                   sendFeedback("myname",feed.getText().toString(),receiver);
+                   sendFeedback(main.getName(),feed.getText().toString(),receiver);
                 }
                 
             
@@ -134,14 +137,15 @@ public class Feedback extends Fragment{
                 progressDialog.setIndeterminate(false);
                 progressDialog.show();
                 mRequestQueue = Volley.newRequestQueue(getContext());
+            Toast.makeText(getContext(), receiver+mail+feed, Toast.LENGTH_SHORT).show();
 
 
-                StringRequest request = new StringRequest(Request.Method.POST,uRl, new Response.Listener<String>() {
+                StringRequest request = new StringRequest(Request.Method.POST,mm.getUserfeed(), new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
 
-                        if (response.equals("se")) {
+                        if (response.equals("sen")) {
                             progressDialog.dismiss();
                             Toast.makeText(getContext(), "Thank you for your feedback!", Toast.LENGTH_SHORT).show();
 
@@ -166,18 +170,19 @@ public class Feedback extends Fragment{
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         HashMap<String, String> param = new HashMap<>();
-//                        param.put("fname", name);
-                       param.put("module", receiver);
-                        param.put("email", mail);
-////                        param.put("time", amount);
-////                        param.put("date", date);
-                        param.put("feed", feed);
+
+                       param.put("module",receiver);
+                        param.put("email",mail);
+
+                        param.put("feed",feed);
+
 
 
                         return param;
                     }
                 };
                 request.setShouldCache(false);
+                request.setRetryPolicy(new DefaultRetryPolicy(10000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
                 mRequestQueue.add(request);
 
 

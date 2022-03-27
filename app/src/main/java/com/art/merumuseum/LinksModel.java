@@ -1,18 +1,20 @@
 package com.art.merumuseum;
 
 public class LinksModel {
+    String ip = "www.elimukenya.co.ke/Izzoh"+"";
+//        String ip="192.168.36.102/Izzoh";
     String aContributer;
-    String apprbtncura;
+    String apprbtncura="http://"+ip+"/aprvbtnart.php";
     String approvArtefact;
     String approvepays;
-    String artefacts;
+    String artefacts="http://"+ip+"/getArtfacts.php";
     String book;
     String btncomplete;
     String btndnComplete;
     String coming;
     String completedvis;
     String contributer;
-    String contributerurl;
+    String contributerurl="http://"+ip+"/insertcontributer.php";
     String curator;
     String event_url;
     String fapprove;
@@ -28,9 +30,7 @@ public class LinksModel {
     String getallfinance;
     String guide;
     String history;
-//    String ip = "www.elimukenya.co.ke/Izzoh"+
-//            "";
-    String ip="192.168.137.1/Izzoh";
+
     String pContributer;
     String payvr;
     String peendArtefact;
@@ -39,11 +39,15 @@ public class LinksModel {
     String rejbtncura;
     String uploadurl;
     String visitor;
-    String visitorurl;
-    String userfeed;
-    String fedFinace;
-    String fedcura;
-    String fedguide;
+    String customer="http://"+ip+"/insertcustomer.php";
+    String userfeed="http://"+ip+"/sendfeed.php";
+    String fedFinace="http://"+ip+"/Finance.php";
+    String fedcura="http://"+ip+"/curatorfeed.php";
+    String fedguide="http://"+ip+"/guidefeed.php";
+
+    public String getCustomer() {
+        return customer;
+    }
 
     public String getFedFinace() {
         return fedFinace;
@@ -62,47 +66,52 @@ public class LinksModel {
         String str = "http://";
 
 
-        this.visitorurl = stringBuilder.toString();
-        stringBuilder = new StringBuilder();
-        stringBuilder.append(str);
-        stringBuilder.append(this.ip);
-        stringBuilder.append("/insert.php");
 
-        this.contributerurl = stringBuilder.toString();
-        stringBuilder = new StringBuilder();
-        stringBuilder.append(str);
-        stringBuilder.append(this.ip);
-        stringBuilder.append("/insertcontributer.php");
 
-        this.userfeed = stringBuilder.toString();
-        stringBuilder = new StringBuilder();
-        stringBuilder.append(str);
-        stringBuilder.append(this.ip);
-        stringBuilder.append("/sendfeed.php");
+//
+//        this.customer = stringBuilder.toString();
+//        stringBuilder = new StringBuilder();
+//
+//        stringBuilder.append("http://"+ip+"/insertcustomer.php");
 
-        this.fedguide = stringBuilder.toString();
-        stringBuilder = new StringBuilder();
-        stringBuilder.append(str);
-        stringBuilder.append(this.ip);
-        stringBuilder.append("/guidefeed.php");
 
-        this.fedcura = stringBuilder.toString();
-        stringBuilder = new StringBuilder();
-        stringBuilder.append(str);
-        stringBuilder.append(this.ip);
-        stringBuilder.append("/curatorfeed.php");
+//        this.contributerurl = stringBuilder.toString();
+//        stringBuilder = new StringBuilder();
+//        stringBuilder.append(str);
+//        stringBuilder.append(this.ip);
+//        stringBuilder.append("/insertcontributer.php");
 
-        this.fedFinace = stringBuilder.toString();
-        stringBuilder = new StringBuilder();
-        stringBuilder.append(str);
-        stringBuilder.append(this.ip);
-        stringBuilder.append("/Finance.php");
+//
+//        this.userfeed = stringBuilder.toString();
+//        stringBuilder = new StringBuilder();
+//        stringBuilder.append(str);
+//        stringBuilder.append(this.ip);
+//        stringBuilder.append("/sendfeed.php");
 
-        this.artefacts = stringBuilder.toString();
-        stringBuilder = new StringBuilder();
-        stringBuilder.append(str);
-        stringBuilder.append(this.ip);
-        stringBuilder.append("/getArtfacts.php");
+
+//        this.fedguide = stringBuilder.toString();
+//        stringBuilder = new StringBuilder();
+//        stringBuilder.append(str);
+//        stringBuilder.append(this.ip);
+//        stringBuilder.append("/guidefeed.php");
+
+//        this.fedcura = stringBuilder.toString();
+//        stringBuilder = new StringBuilder();
+//        stringBuilder.append(str);
+//        stringBuilder.append(this.ip);
+//        stringBuilder.append("/curatorfeed.php");
+//
+//        this.fedFinace = stringBuilder.toString();
+//        stringBuilder = new StringBuilder();
+//        stringBuilder.append(str);
+//        stringBuilder.append(this.ip);
+//        stringBuilder.append("/Finance.php");
+
+//        this.artefacts = stringBuilder.toString();
+//        stringBuilder = new StringBuilder();
+//        stringBuilder.append(str);
+//        stringBuilder.append(this.ip);
+//        stringBuilder.append("/getArtfacts.php");
 
 
         stringBuilder = new StringBuilder();
@@ -146,11 +155,11 @@ public class LinksModel {
         stringBuilder.append(this.ip);
         stringBuilder.append("/rejectbtnart.php");
         this.rejbtncura = stringBuilder.toString();
-        stringBuilder = new StringBuilder();
-        stringBuilder.append(str);
-        stringBuilder.append(this.ip);
-        stringBuilder.append("/aprvbtnart.php");
-        this.apprbtncura = stringBuilder.toString();
+//        stringBuilder = new StringBuilder();
+//        stringBuilder.append(str);
+//        stringBuilder.append(this.ip);
+//        stringBuilder.append("/aprvbtnart.php");
+//        this.apprbtncura = stringBuilder.toString();
         stringBuilder = new StringBuilder();
         stringBuilder.append(str);
         stringBuilder.append(this.ip);
@@ -362,7 +371,7 @@ public class LinksModel {
     }
 
     public String getVisitorurl() {
-        return this.visitorurl;
+        return this.customer;
     }
 
     public String getUploadurl() {

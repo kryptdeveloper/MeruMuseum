@@ -98,7 +98,7 @@ public class Register extends AppCompatActivity {
 
                         break;
                     case 1:
-                        selectedUrl=linksModel.getVisitorurl();
+                        selectedUrl=linksModel.getCustomer();
 
                         break;
 
@@ -162,12 +162,12 @@ public class Register extends AppCompatActivity {
             progressDialog.show();
 
 
-            StringRequest request = new StringRequest(Request.Method.POST, selectedUrl, new Response.Listener<String>() {
+            StringRequest request = new StringRequest(Request.Method.POST,selectedUrl, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
 
                     if (response.equals("You are registered successfully")) {
-                        Toast.makeText(Register.this, "Wait for aproval", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Register.this, "Wait for approval", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(Register.this, Signin.class));
                         progressDialog.dismiss();
                         finish();

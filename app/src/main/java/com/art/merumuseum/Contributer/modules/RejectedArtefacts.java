@@ -51,6 +51,11 @@ public class RejectedArtefacts extends Fragment {
         mm=new LinksModel();
         getArtefacts();
         contrubuter=new Contrubuter();
+        try {
+            Toast.makeText(contrubuter, contrubuter.getName(), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         recyclerView =view.findViewById(R.id.contributerarteRecy);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getContext());
@@ -75,10 +80,10 @@ public class RejectedArtefacts extends Fragment {
                             for (int i = 0; i < jsonArray.length(); i++) {
 
                                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                                String name = jsonObject.getString("name");
+                                String name = jsonObject.getString("email");
                                 String desc = jsonObject.getString("descri");
                                 String image = jsonObject.getString("image");
-                                String title = jsonObject.getString("name");
+                                String title = jsonObject.getString("artname");
 
                                 String status = jsonObject.getString("status");
                                 ArtefactObject object = new ArtefactObject(name,desc,image,title,status);
@@ -95,7 +100,7 @@ public class RejectedArtefacts extends Fragment {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getContext(), error.toString(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), error.toString(), Toast.LENGTH_SHORT).show();
             }
         }
 

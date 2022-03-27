@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,7 +32,8 @@ public class ApproveActivity extends AppCompatActivity {
     ImageView art;
     TextView nm,artnm,des,status;
     ProgressDialog progressDialog;
-    Button approv,reject;
+    Button approv,reject,reasonbtn;
+    EditText reason;
     LinksModel mm;
     private RequestQueue mRequestQueue;
     @Override
@@ -40,6 +42,8 @@ public class ApproveActivity extends AppCompatActivity {
         progressDialog=new ProgressDialog(this);
         setContentView(R.layout.activity_approve);
         art=findViewById(R.id.aprovactimag);
+        reason=findViewById(R.id.rejectdetidcura);
+        reasonbtn=findViewById(R.id.subRejectidcura);
         nm=findViewById(R.id.artnmAprov);
         artnm=findViewById(R.id.artnmAprov);
         des=findViewById(R.id.aproactDes);
@@ -58,7 +62,9 @@ public class ApproveActivity extends AppCompatActivity {
         reject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rejectArt(extras.getString("name"));
+
+                reason.setVisibility(View.VISIBLE);
+                reasonbtn.setVisibility(View.VISIBLE);
 
             }
         });
@@ -66,6 +72,13 @@ public class ApproveActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 approvArt(extras.getString("name"));
+
+            }
+        });
+        reasonbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                rejectArt(extras.getString("name"),reason.getText().toString());
 
             }
         });
@@ -119,7 +132,7 @@ public class ApproveActivity extends AppCompatActivity {
         mRequestQueue.add(request);
     }
 
-    private void rejectArt(String reject) {
+    private void rejectArt(String reject,String reason) {
         mm=new LinksModel();
         progressDialog.setTitle("Rejecting");
         progressDialog.setCancelable(false);
@@ -156,6 +169,7 @@ public class ApproveActivity extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
                 HashMap<String,String> param = new HashMap<>();
                 param.put("rejected",reject);
+                param.put("reasons",reason);
 
                 return param;
             }
