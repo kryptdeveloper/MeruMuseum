@@ -5,6 +5,15 @@
 
     <item
 
+        android:id="@+id/Visitorsid"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard"
+        />
+
+
+
+    <item
+
         android:id="@+id/areasTobevisted"
         android:title="Incoming"
         android:icon="@drawable/map"
@@ -17,12 +26,6 @@
 
         />
 
-    <item
-
-        android:id="@+id/Visitorsid"
-        android:title="Visitors"
-        android:icon="@drawable/visitors"
-        />
 
     <item
 
