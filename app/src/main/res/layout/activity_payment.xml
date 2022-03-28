@@ -11,6 +11,7 @@
     tools:context="com.art.merumuseum.modules.Payment">
 
     <TextView
+        android:layout_margin="32dp"
         android:id="@+id/Amountid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,13 +20,14 @@
         android:textSize="32dp" />
 
     <TextView
+        android:layout_margin="32dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Choose date of arrival below"
         android:textSize="21dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/datepicked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,11 +37,14 @@
         android:textSize="21dp" />
 
     <EditText
+        android:layout_margin="12dp"
         android:id="@+id/codeMpesa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:capitalize="characters"
+        android:textAllCaps="true"
+
         android:hint="Enter Mpesa Code"
         android:maxLength="10"
         android:textSize="32dp" />

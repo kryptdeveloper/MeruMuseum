@@ -153,7 +153,8 @@ public class Approved extends Fragment {
                                 String fname = jsonObject.getString("fname");
                                 String sname = jsonObject.getString("sname");
                                 String comp = jsonObject.getString("comp");
-                                PayObject object = new PayObject(fname,sname,Amount,email,mpesacode,date,tranid,status,comp);
+                                Toast.makeText(getContext(),Amount+email+date+mpesacode+tranid+status+fname+sname+comp, Toast.LENGTH_SHORT).show();
+                                PayObject object = new PayObject(Amount,fname,sname,email,mpesacode,date,tranid,status,comp);
                                 obj.add(object);
                             }
 

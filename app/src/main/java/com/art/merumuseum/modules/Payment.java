@@ -39,7 +39,8 @@ import java.util.Map;
 
 public class Payment extends AppCompatActivity {
     TextView prize;
-    EditText mcode,date;
+    EditText mcode;
+    TextView date;
     LinksModel mm;
     Button pay;
     String hh;
