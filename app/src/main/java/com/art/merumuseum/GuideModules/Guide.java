@@ -25,7 +25,7 @@ public class Guide extends AppCompatActivity implements BottomNavigationView.OnN
         bottomNavigationView=findViewById(R.id.btmNav);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
-        getSupportFragmentManager().beginTransaction().replace(R.id.guideMain,new ComingVisitors()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.guideMain,new Visitors()).commit();
     }
 
     @Override

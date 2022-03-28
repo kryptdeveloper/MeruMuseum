@@ -50,20 +50,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Adults 200/= below 16 years 100/="
+                android:text="Charges"
                 android:textSize="21dp" />
 
             <CheckBox
                 android:id="@+id/ac"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="adult" />
+                android:text="adult 200/= " />
 
             <CheckBox
                 android:id="@+id/kc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="below 16" />
+                android:text="below 16yrs 100/=" />
 
         </LinearLayout>
 
@@ -91,32 +91,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Adults 500/= below 16 years 250/="
+                android:text="Charges"
                 android:textSize="21dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Adults 400/= below 16 years 200/="
-                android:textSize="21dp" />
+
 
             <CheckBox
                 android:id="@+id/ar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="adult" />
+                android:text="adult 500/=" />
+
 
             <CheckBox
                 android:id="@+id/kr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" below 16" />
+                android:text=" below 16yrs 250/=" />
 
         </LinearLayout>
 
 
-        -
+
 
         <LinearLayout
             android:id="@+id/nonresident"
@@ -134,18 +130,24 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="21dp"
                 android:textStyle="bold|italic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Charges "
+                android:textSize="21dp" />
 
             <CheckBox
                 android:id="@+id/a_r"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="adult" />
+                android:text="Adults 400/= " />
 
             <CheckBox
                 android:id="@+id/k_r"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="below 16" />
+                android:text="below 16yrs 200/=" />
 
         </LinearLayout>
 
