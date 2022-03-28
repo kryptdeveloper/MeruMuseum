@@ -136,6 +136,7 @@ public class Feedback extends Fragment{
 
         private void  sendFeedback(String mail, String feed,String receiver) {
 
+
                 progressDialog.setTitle("Sending feedback");
                 progressDialog.setCancelable(false);
                 progressDialog.setCanceledOnTouchOutside(false);
