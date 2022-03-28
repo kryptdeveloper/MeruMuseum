@@ -106,7 +106,7 @@ public class Contrubuter extends AppCompatActivity implements NavigationView.OnN
                 break;
 
             case R.id.approvedc:
-                fag=new ContributeClass();
+                fag=new ApprovedModules();
                 toolbar.setTitle("Approved Artefacts");
                 break;
             case R.id.idUploadc:

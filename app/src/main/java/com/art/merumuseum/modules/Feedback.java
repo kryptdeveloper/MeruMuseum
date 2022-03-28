@@ -28,11 +28,15 @@ import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.art.merumuseum.LinksModel;
 import com.art.merumuseum.Main;
+import com.art.merumuseum.UserInfo.Register;
+import com.art.merumuseum.UserInfo.Signin;
+import com.art.merumuseum.UserInfo.Singleton;
 import com.art.merumuseum1.R;
 
 import java.util.HashMap;
@@ -46,7 +50,7 @@ public class Feedback extends Fragment{
     Main main;
     EditText feed;
     String link="";
-    String receiver="";
+    String receiver="admin";
     private RequestQueue mRequestQueue;
     ProgressDialog progressDialog;
 
@@ -75,7 +79,7 @@ public class Feedback extends Fragment{
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i){
                     case 0:
-                        link=mm.getUserfeed();
+
                         receiver="curator";
 
                         Toast.makeText(getContext(), receiver, Toast.LENGTH_SHORT).show();
@@ -119,6 +123,7 @@ public class Feedback extends Fragment{
                 }else{
 
                    sendFeedback(main.getName(),feed.getText().toString(),receiver);
+                    Toast.makeText(getContext(), main.getName()+feed.getText()+receiver, Toast.LENGTH_SHORT).show();
                 }
                 
             
@@ -129,7 +134,7 @@ public class Feedback extends Fragment{
     }
 
 
-        private void  sendFeedback(final String mail,final String feed, final String receiver) {
+        private void  sendFeedback(String mail, String feed,String receiver) {
 
                 progressDialog.setTitle("Sending feedback");
                 progressDialog.setCancelable(false);
@@ -137,59 +142,44 @@ public class Feedback extends Fragment{
                 progressDialog.setIndeterminate(false);
                 progressDialog.show();
                 mRequestQueue = Volley.newRequestQueue(getContext());
-            Toast.makeText(getContext(), receiver+mail+feed, Toast.LENGTH_SHORT).show();
+             StringRequest request=new StringRequest(Request.Method.POST, mm.getSendfeedback(), new Response.Listener<String>() {
+                 @Override
+                 public void onResponse(String response) {
+                     if (response.equals("sen"))
+                     {
+                         Toast.makeText(getContext(), "sent", Toast.LENGTH_SHORT).show();
+                         progressDialog.dismiss();
+                     }else{
+                         Toast.makeText(getContext(), "check you internet and try again!", Toast.LENGTH_SHORT).show();
+                         progressDialog.dismiss();
+                     }
+
+                   }
+             }, new Response.ErrorListener() {
+                 @Override
+                 public void onErrorResponse(VolleyError error) {
+                     error.printStackTrace();
+                     Toast.makeText(getContext(), error.toString(), Toast.LENGTH_SHORT).show();
+                     progressDialog.dismiss();
+
+                 }
+             }){
+
+                 @Override
+                 protected Map<String, String> getParams() throws AuthFailureError {
+                     HashMap<String, String> param = new HashMap<>();
+                     param.put("module", receiver);
+                     param.put("feed",feed);
+                     param.put("email", mail);
+                     return param;
+                 }
+             };
 
 
-                StringRequest request = new StringRequest(Request.Method.POST,mm.getUserfeed(), new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-
-                        if (response.equals("sen")) {
-                            progressDialog.dismiss();
-                            Toast.makeText(getContext(), "Thank you for your feedback!", Toast.LENGTH_SHORT).show();
-
-                        } else {
-                            Toast.makeText(getContext(), "Please try checking your internet and Send your feedback again", Toast.LENGTH_SHORT).show();
-                            progressDialog.dismiss();
-
-
-
-                        }
-
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(getContext(), error.toString(), Toast.LENGTH_SHORT).show();
-                        progressDialog.dismiss();
-
-                    }
-                }) {
-                    @Nullable
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        HashMap<String, String> param = new HashMap<>();
-
-                       param.put("module",receiver);
-                        param.put("email",mail);
-
-                        param.put("feed",feed);
-
-
-
-                        return param;
-                    }
-                };
-                request.setShouldCache(false);
-                request.setRetryPolicy(new DefaultRetryPolicy(10000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-                mRequestQueue.add(request);
-
-
-        }
-
-
-
-
+    }
 }
+
+
+
+
 

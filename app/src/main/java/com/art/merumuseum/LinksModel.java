@@ -1,8 +1,11 @@
 package com.art.merumuseum;
 
 public class LinksModel {
-    String ip = "www.elimukenya.co.ke/Izzoh"+"";
+    String ip = "www.elimukenya.co.ke/Izzoh";
 //        String ip="192.168.36.102/Izzoh";
+
+    String sendfeedback="http://"+ip+"/sendfeed.php";
+
     String aContributer;
     String apprbtncura="http://"+ip+"/aprvbtnart.php";
     String approvArtefact;
@@ -40,10 +43,21 @@ public class LinksModel {
     String uploadurl;
     String visitor;
     String customer="http://"+ip+"/insertcustomer.php";
-    String userfeed="http://"+ip+"/sendfeed.php";
-    String fedFinace="http://"+ip+"/Finance.php";
+//
+//    String userfeed;
+
+
+    String fedFinace="http://"+ip+"/Financefeed.php";
     String fedcura="http://"+ip+"/curatorfeed.php";
     String fedguide="http://"+ip+"/guidefeed.php";
+
+    public String getSendfeedback() {
+        return sendfeedback;
+    }
+
+    public void setSendfeedback(String sendfeedback) {
+        this.sendfeedback = sendfeedback;
+    }
 
     public String getCustomer() {
         return customer;
@@ -82,8 +96,9 @@ public class LinksModel {
 //        stringBuilder.append("/insertcontributer.php");
 
 //
-//        this.userfeed = stringBuilder.toString();
 //        stringBuilder = new StringBuilder();
+//        this.userfeed = stringBuilder.toString();
+//
 //        stringBuilder.append(str);
 //        stringBuilder.append(this.ip);
 //        stringBuilder.append("/sendfeed.php");
@@ -401,13 +416,7 @@ public class LinksModel {
     public String getBook() {
         return this.book;
     }
-    public String getUserfeed() {
-        return userfeed;
-    }
 
-    public void setUserfeed(String userfeed) {
-        this.userfeed = userfeed;
-    }
 
     public String getCurator() {
         return this.curator;
@@ -437,143 +446,4 @@ public class LinksModel {
         return this.guide;
     }
 
-//    String ip="";
-//
-//    //contributer
-//    String Uploadurl="";
-//    String aContributer="";
-//    String pContributer="";
-//    String rContributer;
-//
-//    //curator
-//     String Artefacts;
-//    String PeendArtefact;
-//    String ApprovArtefact;
-//    String RejArtefact;
-//    String FeedCura;
-//    String Apprbtncura;
-//    String Rejbtncura;
-//    //Finance
-//    String Fbtnapprov;
-//    String Ftbnrej;
-//    String Ffapprove;
-//    String Fpending;
-//    String Ffreject;
-//    String Approvepays;
-//
-//String book;
-//    String pyvr;
-//    public String getUploadurl() {
-//        return Uploadurl;
-//    }
-//
-//    public String getIp() {
-//        return ip;
-//    }
-//
-//    public void setIp(String ip) {
-//        this.ip = ip;
-//    }
-//
-//    public String getaContributer() {
-//        return aContributer;
-//    }
-//
-//    public String getpContributer() {
-//
-//        return pContributer;
-//    }
-//
-//    public String getrContributer() {
-//
-//        return rContributer;
-//
-//    }
-//
-//    public String getArtefacts() {
-//        return Artefacts;
-//
-//    }
-//
-//    public String getPeendArtefact() {
-//        return PeendArtefact;
-//    }
-//
-//    public String getApprovArtefact() {
-//        return ApprovArtefact;
-//    }
-//
-//    public String getRejArtefact() {
-//        return RejArtefact;
-//    }
-//
-//    public String getFeedcura() {
-//        return FeedCura;
-//    }
-//
-//    public String getApprbtncura() {
-//        return Apprbtncura;
-//    }
-//
-//    public String getRejbtncura() {
-//        return Rejbtncura;
-//    }
-//
-//    public String getFbtnapprov() {
-//        return Fbtnapprov;
-//    }
-//
-//    public String getFtbnrej() {
-//        return Ftbnrej;
-//    }
-//
-//    public String getFfapprove() {
-//        return Ffapprove;
-//    }
-//
-//    public String getFpending() {
-//        return Fpending;
-//    }
-//
-//    public String getFfreject() {
-//        return Ffreject;
-//    }
-//
-//    public String getApprovepays() {
-//        return Approvepays;
-//    }
-//
-//    public String getPayvr() {
-//        return pyvr;
-//    }
-//
-//    public String getBook() {
-//        return book;
-//    }
-//String g;
-//    public String getBtncomplete() {
-//        return g;
-//    }
-//
-//    public String getBtndnComplete() {
-//        return g;
-//    }
-//
-//    public String getComing() {
-//        return g;
-//    }
-//
-//    public String getCompletedvis() {
-//        return g;
-//
-//    }
-//
-//    public String getEvent_url() {
-//        return g;
-//
-//    }
-//
-//    public String getHistory() {
-//        return g;
-//    }
 }

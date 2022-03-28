@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.art.merumuseum1.R;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -38,7 +39,7 @@ public class RecyclerViewAdapterFinance extends RecyclerView.Adapter<RecyclerVie
     public RecyclerViewAdapterFinance(Context context, ArrayList<PayObject> payObjects) {
         this.context = context;
         this.payObjects = payObjects;
-        exampleListFull=new ArrayList<>(payObjects);
+        this.exampleListFull=new ArrayList<>(payObjects);
 
     }
 
@@ -63,7 +64,7 @@ public class RecyclerViewAdapterFinance extends RecyclerView.Adapter<RecyclerVie
 
         holder.status.setText("Status:"+payObjects.get(position).getStatus());
         holder.amount.setText("Amount:"+payObjects.get(position).getAmount());
-        holder.amount.setText("Name:"+payObjects.get(position).getFname()+" "+payObjects.get(position).getSname());
+       // holder.amount.setText("Name:"+payObjects.get(position).getFname()+" "+payObjects.get(position).getSname());
         holder.mpesacode.setText("Mpesa Code:"+payObjects.get(position).getMpesacode());
         holder.email.setText("Email :"+payObjects.get(position).getName());
         ghghdf=payObjects.get(position).getName();
@@ -102,7 +103,7 @@ public class RecyclerViewAdapterFinance extends RecyclerView.Adapter<RecyclerVie
             List<PayObject> filteredList = new ArrayList<>();
 
 
-            if (constraint == null || constraint.length() == 0) {
+            if (constraint.toString().isEmpty()) {
                 filteredList.addAll(exampleListFull);
             } else {
                 String filterPattern = constraint.toString().toLowerCase().trim();
@@ -126,7 +127,7 @@ public class RecyclerViewAdapterFinance extends RecyclerView.Adapter<RecyclerVie
             payObjects.clear();
 
 
-            payObjects.addAll((ArrayList) results.values);
+            payObjects.addAll((Collection<? extends PayObject>) results.values);
 
 
 
@@ -143,7 +144,7 @@ public class RecyclerViewAdapterFinance extends RecyclerView.Adapter<RecyclerVie
         public HolderFinance(@NonNull View itemView) {
             super(itemView);
             amount=itemView.findViewById(R.id.amountapprov);
-            name=itemView.findViewById(R.id.namepayID);
+          //  name=itemView.findViewById(R.id.namepayID);
             date=itemView.findViewById(R.id.dateApprov);
             email=itemView.findViewById(R.id.emailapprov);
             status=itemView.findViewById(R.id.statusapprov);

@@ -22,7 +22,7 @@
             android:layout_gravity="center_horizontal"
             android:id="@+id/mpesaApprov"
             />
-        <TextView
+        `<!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name: Isaiah Isoe"
@@ -30,7 +30,7 @@
             android:textStyle="bold"
             android:layout_gravity="center_horizontal"
             android:id="@+id/namepayID"
-            />
+            />-->`
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
