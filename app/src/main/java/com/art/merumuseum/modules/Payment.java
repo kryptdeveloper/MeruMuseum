@@ -55,6 +55,7 @@ public class Payment extends AppCompatActivity {
         setContentView(R.layout.activity_payment);
         prize=findViewById(R.id.Amountid);
         mcode=findViewById(R.id.codeMpesa);
+
         date=findViewById(R.id.datepicked);
         pay=findViewById(R.id.pay_btn);
         mm=new LinksModel();

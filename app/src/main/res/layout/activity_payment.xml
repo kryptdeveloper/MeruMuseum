@@ -42,7 +42,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:capitalize="characters"
+        android:inputType="textCapWords"
+
+
         android:textAllCaps="true"
 
         android:hint="Enter Mpesa Code"

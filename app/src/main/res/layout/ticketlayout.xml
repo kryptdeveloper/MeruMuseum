@@ -35,16 +35,12 @@
         android:gravity="center_horizontal"
         android:text="Thank you for making your payment to Meru Museum."
         android:textSize="21dp" />
-
     <TextView
-        android:id="@+id/amountRe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:gravity="center_horizontal"
-        android:text="Amount paid: 490 kes"
-        android:textSize="32dp"
-        android:textStyle="bold" />
+        android:layout_width="wrap_content"
+        android:textSize="21dp"
+
+        android:text="Your booking date is "
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/dateRe"
@@ -57,11 +53,31 @@
         android:textStyle="bold|italic" />
 
     <TextView
+        android:id="@+id/amountRe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="Amount paid: 490 kes"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:gravity="center_horizontal"
         android:text="Enjoy!"
         android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/printdnt"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:textSize="21dp"
+
+        android:text="printed on: 7/5/2020 21:30 "
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

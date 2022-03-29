@@ -69,7 +69,7 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
 
     drawerLayout=findViewById(R.id.drawer);
     navigationView=findViewById(R.id.nav);
-    toolbar=findViewById(R.id.toolbar);
+    toolbar=findViewById(R.id.toolbar1);
     View header = navigationView.getHeaderView(0);
     usernm = (TextView) header.findViewById(R.id.usernameId);
 
